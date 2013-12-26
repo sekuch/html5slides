@@ -343,7 +343,7 @@ SlideDeck.prototype.loadConfig_ = function(config) {
       }
       html = presenterTitle.join(' - ') + '<br>';
 
-      var gplus = p.gplus ? '<span>g+</span><a href="' + p.gplus +
+      /*var gplus = p.gplus ? '<span>g+</span><a href="' + p.gplus +
           '">' + p.gplus.replace(/https?:\/\//, '') + '</a>' : '';
 
       var twitter = p.twitter ? '<span>twitter</span>' +
@@ -357,6 +357,15 @@ SlideDeck.prototype.loadConfig_ = function(config) {
           '">' + p.github.replace(/https?:\/\//, '') + '</a>' : '';
 
       var html2 = [gplus, twitter, www, github].join('<br>');
+      */
+
+      var email = p.email ? '<span>email</span>' +
+          '<a href="mailto:' + p.email + '">' +
+          p.email + '</a>' : '';
+
+
+      var html2 = [email].join('<br>'); 
+
 
       if (dataConfigContact) {
         dataConfigContact.innerHTML = html2;
