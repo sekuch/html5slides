@@ -1,26 +1,92 @@
-title: Slide Title
-subtitle: Subtitle
-class: image
+title: Inhalt
+class: big
+build_lists: fade
 
-![Mobile vs desktop users](image.png)
-
----
-
-title: Segue Slide
-subtitle: Subtitle
-class: segue dark nobackground
+- Motivation
+- Technik
+- Möglichkeiten
+- Ich will auch!!
 
 ---
 
-title: Agenda
+title: Motivation
+class: big
+build_lists: fade
+
+- Schnelleres erstellen von Präsentationen
+- Kein Layouten
+- Keine umständlicher Menüführung
+- **Einbinden von Dynamischen Inhalten**
+- **Automatisches Syntax-Highlighting**
+
+---
+
+title: Technik
+class: segue dark
+
+---
+
+title: Motivation
+class: big
+build_lists: fade
+
+- Schnelleres erstellen von Präsentationen
+- Kein Layouten
+- Keine umständlicher Menüführung
+- **Einbinden von Dynamischen Inhalten**
+- **Automatisches Syntax-Highlighting**
+
+---
+
+title: Möglichkeiten
+class: segue dark
+
+---
+
+title: Listen (stay)
+class: big
+build_lists:
+
+- Item 1
+- Item 2
+- Item 3
+
+---
+
+title: Listen (solid)
+class: big
+build_lists:solid
+
+- Item 1
+- Item 2
+- Item 3
+
+---
+
+title: Listen (fade)
+class: big
+build_lists:fade
+
+- Item 1
+- Item 2
+- Item 3
+---
+
+title: Agenda 2
 class: big
 build_lists: true
+build_fade: true
 
 Things we'll cover (list should build):
 
 - Bullet1
 - Bullet2
 - Bullet3
+
+slide-notes
+
+- das erste
+- das zweite
 
 ---
 
