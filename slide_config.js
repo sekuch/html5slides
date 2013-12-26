@@ -1,8 +1,8 @@
 var SLIDE_CONFIG = {
   // Slide settings
   settings: {
-    title: 'Title Goes Here<br>Up To Two Lines',
-    subtitle: 'Subtitle Goes Here',
+    title: 'Präsentieren mit HTML5slides',
+    subtitle: 'Eine Alternative zu PowerPoint',
     //eventInfo: {
     //  title: 'Google I/O',
     //  date: '6/x/2013'
@@ -17,14 +17,15 @@ var SLIDE_CONFIG = {
       'Open Sans:regular,semibold,italic,italicsemibold',
       'Source Code Pro'
     ],
-    //theme: ['mytheme'], // Add your own custom themes or styles in /theme/css. Leave off the .css extension.
+    //theme: ['io2013'], // Add your own custom themes or styles in /theme/css. Leave off the .css extension.
   },
 
   // Author information
   presenters: [{
-    name: 'Firstname Lastname',
-    company: 'Job Title<br>Google',
-    gplus: 'http://plus.google.com/1234567890',
+    name: 'Kai Kuchenbäcker',
+    email: 'kai.kuchenbaecker@gmail.com',
+    company: '',
+    gplus: '',
     twitter: '@yourhandle',
     www: 'http://www.you.com',
     github: 'http://github.com/you'
