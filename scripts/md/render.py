@@ -23,9 +23,18 @@ def process_slides():
       slide.update(metadata)
       remainder_index = metadata and 1 or 0
       # Get the content from the rest of the slide.
-      content_section = '\n\n'.join(sections[remainder_index:])
-      html = markdown.markdown(content_section)
+      content_sections = '\n\n'.join(sections[remainder_index:])
+      content_sections = content_sections.split('\nslide-notes\n\n')
+      content_section = content_sections[0]
+
+      if len(content_sections) > 1:
+        note_section = content_sections[1]
+        slide['notes'] = markdown.markdown(note_section)
+
+      html = markdown.markdown(content_section, ['attr_list'])
       slide['content'] = postprocess_html(html, metadata)
+
+
 
       slides.append(slide)
 
@@ -48,9 +57,13 @@ def parse_metadata(section):
 
 def postprocess_html(html, metadata):
   """Returns processed HTML to fit into the slide template format."""
-  if metadata.get('build_lists') and metadata['build_lists'] == 'true':
-    html = html.replace('<ul>', '<ul class="build">')
-    html = html.replace('<ol>', '<ol class="build">')
+  classString = ""
+  if metadata.get('build_lists') and metadata['build_lists'] == 'solid':
+    classString = "build"
+  if metadata.get('build_lists') and metadata['build_lists'] == 'fade':
+    classString = "build fade"
+  html = html.replace('<ul>', '<ul class="'+classString+'">')
+  html = html.replace('<ol>', '<ol class="'+classString+'">')
   return html
 
 if __name__ == '__main__':
