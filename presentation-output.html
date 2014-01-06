@@ -1,0 +1,396 @@
+<!--
+Google IO 2012 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahe <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google IO 2012</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="all" href="theme/css/app.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+<!-- <slide class="logoslide nobackground">
+  <article class="flexbox vcenter">
+    <span><img src="images/google_developers_logo.png"></span>
+  </article>
+</slide>
+ -->
+<slide class="title-slide segue nobackground">
+  <aside class="gdbar"><img src="images/layers_icon_128.png"></aside>
+  <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+  <hgroup class="auto-fadein">
+    <h1 data-config-title><!-- populated from slide_config.json --></h1>
+    <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+    <p data-config-presenter><!-- populated from slide_config.json --></p>
+  </hgroup>
+</slide>
+
+
+<slide class="big" >
+  <aside class="note">
+    <section></section>
+  </aside>
+  
+    <hgroup>
+      <h2>Inhalt</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul class="build fade">
+<li>Motivation</li>
+<li>Möglichkeiten</li>
+<li>Ich will auch!!</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="big" >
+  <aside class="note">
+    <section></section>
+  </aside>
+  
+    <hgroup>
+      <h2>Motivation</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul class="build fade">
+<li>Schnelleres erstellen von Präsentationen</li>
+<li>Kein Layouten</li>
+<li>Keine umständlicher Menüführung</li>
+<li><strong>Einbinden von Dynamischen Inhalten</strong></li>
+<li><strong>Automatisches Syntax-Highlighting</strong></li>
+</ul></article>
+ 
+</slide>
+
+<slide class="segue dark" >
+  <aside class="note">
+    <section></section>
+  </aside>
+  
+    <aside class="gdbar"><img src="images/layers_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Technik</h2>
+      <h3></h3>
+    </hgroup>
+  
+</slide>
+
+<slide class="big" >
+  <aside class="note">
+    <section></section>
+  </aside>
+  
+    <hgroup>
+      <h2>Erstellen der Präsentation</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul class="build fade">
+<li>Layout in CSS</li>
+<li>Schreiben in Markdown</li>
+<li>Markdown -&gt; HTML</li>
+<li>Präsentieren</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="big" >
+  <aside class="note">
+    <section></section>
+  </aside>
+  
+    <hgroup>
+      <h2>Markdown</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul class="build fade">
+<li>Strukturierte Sprache</li>
+<li>Leicht in HTML umzuwandeln</li>
+<li>Bekannt duch Einsatz in Wikis und Foren</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="big" >
+  <aside class="note">
+    <section></section>
+  </aside>
+  
+    <hgroup>
+      <h2>Markdown</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><pre class="prettyprint" data-lang="markdown">
+    # Titel
+
+    Ein wenig Text
+
+    - Item 1
+    - Item 2
+
+    ![alt text](/path/to/image.png "Title")
+</pre></article>
+ 
+</slide>
+
+<slide class="big" >
+  <aside class="note">
+    <section></section>
+  </aside>
+  
+    <hgroup>
+      <h2>Markdown -> HTML</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><pre class="prettyprint" data-lang="html"><xmp>
+<h1 id="titel">Titel</h1>
+
+<p>Ein wenig Text</p>
+
+<ul class="build fade">
+<li>Item 1</li>
+<li>Item 2</li>
+</ul>
+
+<p><img src="/path/to/image.png" alt="alt text" title="Title" /></p>
+</xmp></pre></article>
+ 
+</slide>
+
+<slide class="big" >
+  <aside class="note">
+    <section></section>
+  </aside>
+  
+    <hgroup>
+      <h2>Ergebniss</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="vcenter flexbox"><p><img alt="Gerenderter Code" src="images/renderedMarkdown.png" style="width:600px;border:1px;border-style:solid;padding:20px" title="Gerenderter Code" /></p></article>
+ 
+</slide>
+
+<slide class="segue dark" >
+  <aside class="note">
+    <section></section>
+  </aside>
+  
+    <aside class="gdbar"><img src="images/layers_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Möglichkeiten</h2>
+      <h3></h3>
+    </hgroup>
+  
+</slide>
+
+<slide class="big" >
+  <aside class="note">
+    <section></section>
+  </aside>
+  
+    <hgroup>
+      <h2>Listen</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><pre class="prettyprint" data-lang="markdown">
+    title: Listen
+    class: big
+
+    - Item 1
+    - Item 2
+    - Item 3
+</pre>
+
+<ul class="">
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="big" >
+  <aside class="note">
+    <section></section>
+  </aside>
+  
+    <hgroup>
+      <h2>Listen (stay)</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><pre class="prettyprint" data-lang="markdown">
+    title: Listen (stay)
+    class: big
+    <b>build_lists:stay</b>
+
+    - Item 1
+    - Item 2
+    - Item 3
+</pre>
+
+<ul class="build">
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="big" >
+  <aside class="note">
+    <section></section>
+  </aside>
+  
+    <hgroup>
+      <h2>Listen (fade)</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><pre class="prettyprint" data-lang="markdown">
+    title: Listen (fade)
+    class: big
+    <b>build_lists:fade</b>
+
+    - Item 1
+    - Item 2
+    - Item 3
+</pre>
+
+<ul class="build fade">
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="big" >
+  <aside class="note">
+    <section></section>
+  </aside>
+  
+    <hgroup>
+      <h2>Sourcecode</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><pre class="prettyprint" data-lang="HTML">
+<xmp>
+<pre class="prettyprint" data-lang="C">
+    int main(){
+        <b>printf("Hallo Welt");</b>
+        return 0;
+    }
+</pre>
+</xmp>
+</pre>
+
+<pre class="prettyprint" data-lang="C">
+int main(){
+    <b>printf("Hallo Welt");</b>
+    return 0;
+}
+</pre></article>
+ 
+</slide>
+
+<slide class="big" >
+  <aside class="note">
+    <section></section>
+  </aside>
+  
+    <hgroup>
+      <h2>iFrames</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul class="">
+<li>Einbinden von Webseiten in die Präsentation</li>
+</ul>
+<pre class="prettyprint" data-lang="MARKDOWN">
+<xmp>
+<iframe data-src="https://github.com/sekuch/html5slides"></iframe>
+</xmp>
+</pre></article>
+ 
+</slide>
+
+<slide class="big" >
+  <aside class="note">
+    <section></section>
+  </aside>
+  
+    <hgroup>
+      <h2>iFrames</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><iframe data-src="https://github.com/sekuch/html5slides"></iframe></article>
+ 
+</slide>
+
+<slide class="big" >
+  <aside class="note">
+    <section></section>
+  </aside>
+  
+    <hgroup>
+      <h2>Ich will auch!!</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p>Github: <a href="https://github.com/sekuch/html5slides">https://github.com/<strong>sekuch/html5slides</strong></a></p></article>
+ 
+</slide>
+
+
+<slide class="thank-you-slide segue nobackground">
+  <aside class="gdbar right"><img src="images/layers_icon_128.png"></aside>
+  <article class="flexbox vleft auto-fadein">
+    <h2>&lt;Vielen Dank!&gt;</h2>
+  </article>
+  <!--<p class="auto-fadein" data-config-contact> -->
+    <!-- populated from slide_config.json -->
+  <!-- </p> -->
+</slide>
+
+<!-- <slide class="logoslide dark nobackground">
+  <article class="flexbox vcenter">
+    <span><img src="images/google_developers_logo_white.png"></span>
+  </article>
+</slide> -->
+
+<slide class="backdrop"></slide>
+
+</slides>
+
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+</body>
+</html>
