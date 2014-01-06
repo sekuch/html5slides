@@ -19,4 +19,4 @@ else
   open=xdg-open
 fi
 
-$open http://localhost:$port/template.html && python2 -m SimpleHTTPServer $port;
+$open http://localhost:$port/presentation-output.html && python2 -m SimpleHTTPServer $port;
